@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<style type = "text/css">
+		 input:focus {
+			border:1px solid cyan;
+			background: gray;
+		} 
+		input{cursor: pointer;}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$(":input").focus(function(){
+				$(this.addClass('focus'));
+			}).blur(function(){
+				$(this.removeClass("focus"));
+			});
+			var $content = $("#textarea");
+			$content.focusin(function(event) {
+				//if($content.width() < 500 && (!$content.is(":animated"))) {
+					//$content.height($content.height()+50);
+					$content.animate({
+						width:"+=50"
+					},300);
+				//}
+			});
+			$content.focusout(function(){
+				//if($content.width() > 50) {
+					$content.animate({
+						width:"-=50"
+					},300)
+				//}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div>
+		<form name="form1" id="form1" action="" method="post">
+			<fieldset>
+				<legend>个人信息</legend>
+				<div>
+					<label for="username">name:</label>
+					<input id="username" type="text"></input>					
+				</div>
+				<div>
+					<label for="pass">password:</label>
+					<input id="pass" type="password"></input>
+				</div>
+				<div></div>
+			</fieldset>
+			<div>
+				<div>
+					<input id="big" value="bigger" type="button">
+					<input id="small" value="smaller" type="button">
+				</div>
+				<div>
+					<textarea id="textarea" rows="8" cols="12">testtesttesttesttesttesttesttesttesttesttesttesttesttest</textarea>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
