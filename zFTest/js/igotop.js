@@ -43,7 +43,7 @@
   // 样式
   function initStyle() {
     var tmp = iAddNode("div");
-    tmp.innerHTML = '<style type="text/css">.gotop{ width:32px; height:32px; } #gotop{ position:fixed; bottom:60px; right:10px;text-align:center;display:none; cursor:pointer;  z-index:100;}*html #gotop{ position:absolute; bottom:auto; top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}</style>';
+    tmp.innerHTML = '<style type="text/css">.gotop{ width:32px; height:32px; } #gotop{ position:fixed; bottom:60px; right:20px;text-align:center;display:none; cursor:pointer;  z-index:100;}*html #gotop{ position:absolute; bottom:auto; top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}</style>';
     iAppend(iGetElesByTag("body")[0], tmp.lastChild);
   }
   // 元素
