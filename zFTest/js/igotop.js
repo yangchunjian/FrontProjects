@@ -12,7 +12,7 @@
     b = document.body;
     d = document.documentElement;
     btn = document.getElementById("gotop");
-    window.onscroll = setDisplay();
+    window.onscroll = setDisplay;
     btn.onclick = function () { 
       btn.style.display="none"; 
       window.onscroll = null; 
@@ -20,7 +20,7 @@
         d.scrollTop -= Math.ceil((d.scrollTop + b.scrollTop) * 0.1); 
         b.scrollTop -= Math.ceil((d.scrollTop + b.scrollTop) * 0.1); 
         if((d.scrollTop + b.scrollTop) == 0) {
-          clearInterval(btn.timer, window.onscroll = setDisplay()); 
+          clearInterval(btn.timer, window.onscroll = setDisplay); 
         }
       }, 10);
     };
