@@ -16,16 +16,17 @@
     btn.onclick = function () { 
       btn.style.display="none"; 
       window.onscroll = null; 
-      btn.timer = setInterval(function() { 
+      this.timer = setInterval(function() { 
         d.scrollTop -= Math.ceil((d.scrollTop + b.scrollTop) * 0.1); 
         b.scrollTop -= Math.ceil((d.scrollTop + b.scrollTop) * 0.1); 
-        if((d.scrollTop + b.scrollTop) == 0) 
+        if((d.scrollTop + b.scrollTop) == 0) {
           clearInterval(btn.timer, window.onscroll = setDisplay()); 
+        }
       }, 10);
     };
   }
   function setDisplay() {
-    btn.style.display = (d.scrollTop + b.scrollTop > 500) ? "block" : "none"} 
+    btn.style.display = (d.scrollTop + b.scrollTop > 500) ? "block" : "none"; 
   }
   // 通过标签名获取所有同名元素
   function iGetElesByTag(name) {
