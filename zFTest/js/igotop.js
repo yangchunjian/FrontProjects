@@ -40,7 +40,8 @@
   // 样式
   function initStyle() {
     var tem = iAddNode("div"),
-    tmp.innerHTML = '<style type="text/css">.gotop{ width:32px; height:32px; } #gotop{ position:fixed; bottom:60px; right:10px;text-align:center;display:none; cursor:pointer;  z-index:100;}*html #gotop{ position:absolute; bottom:auto; top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}</style>';
+    var styleStr = ".gotop{ width:32px; height:32px; } #gotop{ position:fixed; bottom:60px; right:10px;text-align:center;display:none; cursor:pointer;  z-index:100;}*html #gotop{ position:absolute; bottom:auto; top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}";
+    tmp.innerHTML = "i<style type=\"text/css\">" + styleStr + "</style>";
     iAppend(iGetElesByTag("head")[0], tmp.lastChild);
   }
   // 元素
