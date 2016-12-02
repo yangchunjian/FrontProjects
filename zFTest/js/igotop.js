@@ -51,6 +51,7 @@
     iEle.className = "gotop";
     iEle.title = "返回顶部";
     iEle.innerHTML = '<img class="gotop" src="http://git.itanken.cn/gotop.svg" border="0" alt="返回顶部">';
+    iAppend(iGetElesByTag("body")[0], iEle);
   }
   
   iGoTop(); // exec return top function
