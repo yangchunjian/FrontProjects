@@ -22,7 +22,7 @@
         if((d.scrollTop + b.scrollTop) == 0) 
           clearInterval(btn.timer, window.onscroll = setDisplay()); 
       }, 10);
-    }
+    };
   }
   function setDisplay() {
     btn.style.display = (d.scrollTop + b.scrollTop > 500) ? "block" : "none"} 
