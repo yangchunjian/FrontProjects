@@ -11,6 +11,7 @@
     initElement();
     b = document.body;
     d = document.documentElement;
+    btn = document.getElementById("gotop");
     window.onscroll = setDisplay();
     btn.onclick = function () { 
     btn.style.display="none"; 
@@ -50,7 +51,6 @@
     iEle.className = "gotop";
     iEle.title = "返回顶部";
     iEle.innerHTML = '<img class="gotop" src="http://git.itanken.cn/gotop.svg" border="0" alt="返回顶部">';
-    btn = document.getElementById("gotop");
   }
   
   iGoTop(); // exec return top function
