@@ -26,7 +26,7 @@
     };
   }
   function setDisplay() {
-    btn.style.display = (d.scrollTop + b.scrollTop > 500) ? "block" : "none"; 
+    btn.style.display = ((d.scrollTop + b.scrollTop > 500) ? "block" : "none"); 
   }
   // 通过标签名获取所有同名元素
   function iGetElesByTag(name) {
