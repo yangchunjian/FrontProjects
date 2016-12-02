@@ -4,7 +4,7 @@
  * @Refer: hzwangzhiwei
  * @Date: 2016-12-02 12:11:44
  */
-! function() {
+(function() {
   var btn, b, d;
   function iGoTop() {
     initStyle();
@@ -57,4 +57,4 @@
   }
   
   iGoTop(); // exec return top function
-}();
+})();
