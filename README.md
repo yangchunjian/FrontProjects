@@ -3,9 +3,9 @@
 > ### zFTest:前端页面测试项目
 > __gotop.html__：[纯js返回顶部按钮测试](https://itanken.github.io/FrontProjects/zFTest/gotop.html)
 >
->     __使用方法__：在页面引入 `igotop.js` 即可：`<script src="js/igotop.js"></script>` 。一般放在 `</body>` 和 `</html>` 之间。
+>   __使用方法__：在页面引入 `igotop.js` 即可：`<script src="js/igotop.js"></script>` 。一般放在 `</body>` 和 `</html>` 之间。
 >
->     __使用示例__：<http://www.zixizixi.com/>
+>   __使用示例__：<http://www.zixizixi.com/>
 >
 > __button.html__：[CSS3动态选择按钮（幽灵按钮）测试](https://itanken.github.io/FrontProjects/zFTest/button.html)
 >
